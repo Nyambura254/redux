@@ -1,8 +1,8 @@
 var person = {
-  name: "Bill",
-  age: 29,
-  city: "Cairo",
-  profession: "surfer",
+    name: "Bill",
+    age: 29,
+    city: "Cairo",
+    profession: "surfer",
 };
 
 console.log(person.profession); // surfer
