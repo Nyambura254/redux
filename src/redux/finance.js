@@ -80,7 +80,7 @@ var store = createStore(
 );
 //detects changes and logs it on console
 store.subscribe(() => {
-    console.log(store.getState());
+    console.log(store.getState()); //current store
 });
 
 var expenseOne = store.dispatch(
