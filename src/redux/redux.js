@@ -1,41 +1,41 @@
 import { createStore } from "redux";
 
 var countReducer = (state = { count: 0 }, action) => {
-  switch (action.type) {
-    case "INCREMENT":
-      return {
-        count: state.count + action.incrementBy,
-      };
-    case "DECREMENT":
-      return {
-        count: state.count - action.decrementBy,
-      };
-    case "RESET":
-      return {
-        count: 0,
-      };
-    case "SET":
-      return {
-        count: action.count,
-      };
-    default:
-      return state;
-  }
+    switch (action.type) {
+        case "INCREMENT":
+            return {
+                count: state.count + action.incrementBy,
+            };
+        case "DECREMENT":
+            return {
+                count: state.count - action.decrementBy,
+            };
+        case "RESET":
+            return {
+                count: 0, //back to initial zero state
+            };
+        case "SET":
+            return {
+                count: action.count,
+            };
+        default:
+            return state;
+    }
 };
 
 var store = createStore(countReducer);
 
 store.subscribe(() => {
-  console.log(store.getState());
+    console.log(store.getState());
 });
 
 // Action creator
 
 const incrementCount = ({ incrementBy = 1 } = {}) => {
-  return {
-    type: "INCREMENT",
-    incrementBy,
-  };
+    return {
+        type: "INCREMENT",
+        incrementBy,
+    };
 };
 
 // const decrementCount = (payload = {}) => {
@@ -45,14 +45,14 @@ const incrementCount = ({ incrementBy = 1 } = {}) => {
 // };
 
 const decrementCount = ({ decrementBy = 1 } = {}) => {
-  return {
-    type: "DECREMENT",
-    decrementBy,
-  };
+    return {
+        type: "DECREMENT",
+        decrementBy,
+    };
 };
 
 const resetCount = () => {
-  return { type: "RESET" };
+    return { type: "RESET" };
 };
 
 // const setCount = (payload) => ({
@@ -61,10 +61,10 @@ const resetCount = () => {
 // });
 
 const setCount = ({ count }) => {
-  return {
-    type: "SET",
-    count,
-  };
+    return {
+        type: "SET",
+        count,
+    };
 };
 
 // ACTION ('objects in redux')
