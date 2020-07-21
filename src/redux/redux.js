@@ -84,4 +84,7 @@ store.dispatch(decrementCount()); // -1
 store.dispatch(decrementCount()); // -2
 store.dispatch(decrementCount({ decrementBy: 13 })); // -15
 
+
+//store.dispatch sends information to our store
+
 store.dispatch(setCount({ count: 145 })); // 145
