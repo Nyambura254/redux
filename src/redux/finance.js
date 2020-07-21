@@ -83,6 +83,7 @@ store.subscribe(() => {
     console.log(store.getState()); //current store
 });
 
+//addExpenseOne
 var expenseOne = store.dispatch(
     addExpense({ description: "Electric Bills", amount: 200 })
 );
