@@ -1,3 +1,4 @@
+//distructuring
 var person = {
     name: "Bill",
     age: 29,
