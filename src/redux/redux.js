@@ -46,7 +46,7 @@ const incrementCount = ({ incrementBy = 1 } = {}) => { //increment by 1
 
 
 
-//decrement
+//decrement by destructuring
 const decrementCount = ({ decrementBy = 1 } = {}) => {
     return {
         type: "DECREMENT",
