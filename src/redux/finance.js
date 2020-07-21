@@ -87,7 +87,7 @@ var expenseOne = store.dispatch(
     addExpense({ description: "Electric Bills", amount: 200 })
 );
 var expenseTwo = store.dispatch(
-    addExpense({ description: "Reducer in hooks", amount: 500 })
+    addExpense({ description: "Hot Coffee", amount: 500 })
 );
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
