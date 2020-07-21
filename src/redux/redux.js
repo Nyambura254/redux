@@ -24,7 +24,7 @@ var countReducer = (state = { count: 0 }, action) => {
 };
 
 var store = createStore(countReducer); //our store where all actions will be stored
-
+//subscribe is where all will be see after console.log after changes are done
 store.subscribe(() => {
     console.log(store.getState());
 });
