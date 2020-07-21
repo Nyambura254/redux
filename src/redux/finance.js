@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from "redux";
-import uuid from "uuid";
+import uuid from "uuid"; //this the universal-unique-id generator
 
 // ADD_EXPENSE
 // var addExpense = (payload = {}) => {
