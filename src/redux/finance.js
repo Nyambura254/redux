@@ -87,6 +87,8 @@ store.subscribe(() => {
 var expenseOne = store.dispatch(
     addExpense({ description: "Electric Bills", amount: 200 })
 );
+
+//addExpenzeTwo
 var expenseTwo = store.dispatch(
     addExpense({ description: "Hot Coffee", amount: 500 })
 );
