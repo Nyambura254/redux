@@ -43,7 +43,7 @@ const removeExpense = (payload = {}) => { //payload is a piece of information se
 };
 
 // expenses reducer
-var expensesReducerDefaultState = [];
+var expensesReducerDefaultState = []; //initial state is empty array
 var expensesReducer = (state = expensesReducerDefaultState, action) => {
     switch (action.type) {
         case "ADD_EXPENSE":
