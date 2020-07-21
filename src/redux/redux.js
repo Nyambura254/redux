@@ -54,6 +54,8 @@ const decrementCount = ({ decrementBy = 1 } = {}) => {
     };
 };
 
+
+//reset to zero
 const resetCount = () => {
     return { type: "RESET" };
 };
