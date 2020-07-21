@@ -65,6 +65,7 @@ const resetCount = () => {
 //   count: payload.count,
 // });
 
+//setting our count
 const setCount = ({ count }) => {
     return {
         type: "SET",
