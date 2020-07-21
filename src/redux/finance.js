@@ -45,7 +45,7 @@ const removeExpense = (payload = {}) => { //payload is a piece of information se
 // expenses reducer
 var expensesReducerDefaultState = []; //initial state is empty array
 var expensesReducer = (state = expensesReducerDefaultState, action) => {
-    switch (action.type) {
+    switch (action.type) { //action must have a type to show what to be performed
         case "ADD_EXPENSE":
             return [...state, action.expense];
         case "REMOVE_EXPENSE":
