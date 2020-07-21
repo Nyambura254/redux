@@ -93,4 +93,4 @@ var expenseTwo = store.dispatch(
     addExpense({ description: "Hot Coffee", amount: 500 })
 );
 
-store.dispatch(removeExpense({ id: expenseOne.expense.id })); //when we want to remove...we can target by id what we have already in our store
+store.dispatch(removeExpense({ id: expenseOne.expense.id })); //when we want to remove...we can target by id on addExpenseTwo what we have already in our store
