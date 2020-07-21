@@ -74,6 +74,7 @@ const setCount = ({ count }) => {
 };
 
 // ACTION ('objects in redux')
+// if no incrementBy then gives us the default value
 store.dispatch(incrementCount({ incrementBy: 11 })); // 11
 store.dispatch(incrementCount()); // 14
 store.dispatch(incrementCount()); // 15
