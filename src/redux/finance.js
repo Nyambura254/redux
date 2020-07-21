@@ -17,7 +17,7 @@ import uuid from "uuid";
 
 // addExpense distructuring
 var addExpense = ({
-    description = "",
+    description = "", //means if no sescription then gives ""
     note = "",
     amount = 0,
     createdAt = 0,
