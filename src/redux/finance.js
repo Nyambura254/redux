@@ -17,7 +17,7 @@ import uuid from "uuid"; //this the universal-unique-id generator
 
 // addExpense distructuring
 var addExpense = ({
-    description = "", //means if no sescription then gives ""
+    description = "", //means if no description then gives ""
     note = "",
     amount = 0,
     createdAt = 0,
