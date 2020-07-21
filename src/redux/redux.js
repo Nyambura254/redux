@@ -31,7 +31,7 @@ store.subscribe(() => {
 
 // Action creator
 
-const incrementCount = ({ incrementBy = 1 } = {}) => {
+const incrementCount = ({ incrementBy = 1 } = {}) => { //increment by 1
     return {
         type: "INCREMENT",
         incrementBy,
