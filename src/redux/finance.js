@@ -51,7 +51,7 @@ var expensesReducer = (state = expensesReducerDefaultState, action) => {
         case "REMOVE_EXPENSE":
             return state.filter((expense) => expense.id !== action.id); //filter expense by id,if no action.id
         default:
-            return state;
+            return state; //default value-initial state
     }
 };
 
