@@ -23,7 +23,7 @@ var countReducer = (state = { count: 0 }, action) => {
     }
 };
 
-var store = createStore(countReducer);
+var store = createStore(countReducer); //our store where all actions will be stored
 
 store.subscribe(() => {
     console.log(store.getState());
