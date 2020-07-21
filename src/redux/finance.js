@@ -70,6 +70,8 @@ var filtersReducer = (state = filtersReducerDefaultState, action) => {
     }
 };
 
+
+//in redux we must have only and only one store where we can reference our value by either calling them or by querry
 var store = createStore(
     combineReducers({
         expenses: expensesReducer,
