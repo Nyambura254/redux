@@ -37,7 +37,7 @@ var addExpense = ({
 // REMOVE_EXPENSE
 const removeExpense = (payload = {}) => { //payload is a piece of information sent to the store..here acts like object
     return {
-        type: "REMOVE_EXPENSE",
+        type: "REMOVE_EXPENSE", //reducer has state and action....action has type to show the fuction to be performed
         id: payload.id,
     };
 };
