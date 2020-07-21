@@ -44,6 +44,9 @@ const incrementCount = ({ incrementBy = 1 } = {}) => { //increment by 1
 //   return { type: "DECREMENT", decrementBy };
 // };
 
+
+
+//decrement
 const decrementCount = ({ decrementBy = 1 } = {}) => {
     return {
         type: "DECREMENT",
