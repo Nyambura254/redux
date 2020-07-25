@@ -32,7 +32,7 @@ var addExpense = ({
             createdAt,
         },
     };
-};
+};/////////////////
 
 // REMOVE_EXPENSE
 const removeExpense = (payload = {}) => { //payload is a piece of information sent to the store..here acts like object
